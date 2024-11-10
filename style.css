@@ -1,0 +1,74 @@
+.box{
+    width: 500px;
+    height: 250px;
+    padding: 20px;
+    background-color: antiquewhite;
+    box-shadow: 0 4px 8px;
+    border-radius: 10px;
+    text-align: center;
+}
+.container{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 50%;
+}
+body{
+    background-color: whitesmoke;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#password{
+    height: 30px;
+    width: 200px;
+    margin-bottom: 10px;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+button{
+    height: 30px;
+    border-radius: 8px;
+    border: transparent;
+    background-color: red;
+    color: white;
+}
+.display{
+    position: relative;
+    display: inline-block;
+}
+.display img{
+position: absolute;
+right: 5px;
+top: 40%;
+transform: translateY(-50%);
+max-width: 24px;
+max-height: 24px;
+cursor: pointer;
+}
+@media screen and (max-width:600px){
+    .box{
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+    #password{
+        width: 100%;
+    }
+    button{
+        width: 100%;
+    }
+    .display img {
+        max-width: 20px; 
+        max-height: 20px;
+    }
+
+    body {
+         /* Adjust body height for small screens */
+        padding: 10px; /* Add some padding to body */
+    }
+}
+
